@@ -232,7 +232,7 @@ const DiningHall = props => {
                         </div>
                     </div>
                     <Link to={"/dining-hall/" + diningHall._id + "/review"} state={{dining_hall: diningHall}} className="text-white text-decoration-none ms-4 mt-3">
-                        <button type="button" className="btn btn-primary btn-lg mb-3" style={{ width: '20em'}}>
+                        <button type="button" className="btn btn-primary btn-lg mb-3" style={{ width: '15em'}}>
                         LEAVE A REVIEW
                         </button>
                     </Link>
