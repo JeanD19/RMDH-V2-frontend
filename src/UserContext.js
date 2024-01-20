@@ -11,12 +11,14 @@ export const UserProvider = ({ children }) => {
         const fetchSession = async () => {
             try {
                 console.log("Rechecking session...")
-                const response = await UserDataService.checkLoggedIn();
+                // const response = await UserDataService.checkLoggedIn();
+                // console.log(response);
+                // if (response.data.user) {
+                //     setUser(response.data.user);
+                //     console.log(user);
+                // }
+                const response = await UserDataService.testSession(10001, "test_user");
                 console.log(response);
-                if (response.data.user) {
-                    setUser(response.data.user);
-                    console.log(user);
-                }
                 //setLoading(false);
             } catch (error) {
                 console.log(error);
