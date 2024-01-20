@@ -17,7 +17,7 @@ export const UserProvider = ({ children }) => {
                     setUser(response.data.user);
                     console.log(user);
                 }
-                setLoading(false);
+                //setLoading(false);
             } catch (error) {
                 console.log(error);
             }

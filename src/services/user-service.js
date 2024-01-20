@@ -21,6 +21,11 @@ class UserDataService {
     checkLoggedIn() {
         return http.get("/api/session");
     }
+
+    testSession(user_id, user_name){
+        console.log(`Sending this info to the backend: ${user_id}, ${user_name}`);
+        return http.post("/api/login", {user_id, user_name});
+    }
 }
 
 export default new UserDataService();
