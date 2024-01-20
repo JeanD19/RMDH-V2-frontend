@@ -251,7 +251,7 @@ const AddReview = props => {
                         <div className="mb-3">
                             <h4 className="mb-3 mt-4">FEEDBACK</h4>
                             <label htmlFor="textReview" className="form-label">Written Review</label>
-                            <textarea className="form-control" id="textReview" onChange={handleTextChange} aria-describedby="textReviewHelp" placeholder="Please write any thoughts or feedback here..." style={{ height: '150px', width: '400px'}} required></textarea>
+                            <textarea className="form-control" id="textReview" onChange={handleTextChange} aria-describedby="textReviewHelp" placeholder="Please write any thoughts or feedback here..." style={{ height: '150px', width: '370px'}} required></textarea>
                         </div>
                         <button type="submit" className="btn btn-primary">Submit</button>
                     </form>
