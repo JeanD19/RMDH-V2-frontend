@@ -17,6 +17,8 @@ export const UserProvider = ({ children }) => {
                     setUser(response.data.user);
                     console.log(user);
                 }
+                //const response = await UserDataService.testSession(10001, "test_user");
+                //console.log(response);
                 setLoading(false);
             } catch (error) {
                 console.log(error);
