@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from '../UserContext';
 import '../App.css';
@@ -16,18 +16,22 @@ const Home = () => {
 
 
 
-    // Function to get the top 5 schools
-    const getTop_5_schools = () => {
-      SchoolDataService.getAll()
-      .then(response => {
-        setTop_5_schools(response.data.schools.slice(0,6));
-      })
-      .catch(e => {
-        console.log(e);
-      });
-    };
+    
 
-    getTop_5_schools();
+    useEffect(() => {
+      // Function to get the top 5 schools
+      const getTop_5_schools = () => {
+        SchoolDataService.getAll()
+        .then(response => {
+          setTop_5_schools(response.data.schools.slice(0,6));
+        })
+        .catch(e => {
+          console.log(e);
+        });
+      };
+
+      getTop_5_schools();
+    }, [user]);
 
     const handleChange = (event) => {
       setSchoolName(event.target.value);
