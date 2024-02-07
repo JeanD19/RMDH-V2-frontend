@@ -14,10 +14,6 @@ const Home = () => {
 
     const { user } = useContext(UserContext);
 
-
-
-    
-
     useEffect(() => {
       // Function to get the top 5 schools
       const getTop_5_schools = () => {

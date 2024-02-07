@@ -12,14 +12,14 @@ const SchoolSearch = props => {
 
     useEffect(() => {
         const findByName = (query) => {
-            console.log(query)
+            //console.log(query)
             SchoolDataService.find(query)
             .then(response => {
-                console.log(response.data.schools.schoolsList);
+                //console.log(response.data.schools.schoolsList);
                 if(response.data.schools.schoolsList.length === 0){
-                    console.log("No schools found");
+                    //console.log("No schools found");
                     setSchools(null);
-                    console.log(schools);
+                    //console.log(schools);
                 }
                 setSchools(response.data.schools.schoolsList);
             })

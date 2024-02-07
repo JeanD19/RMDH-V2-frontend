@@ -108,6 +108,16 @@ const AddReview = props => {
 
             }).catch(e => {
                 console.log('Error');
+                setShowToast(true);
+                toast.error('Error in adding your review', {
+                    position: "bottom-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
             })
             
         }

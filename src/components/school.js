@@ -16,7 +16,7 @@ const School = props => {
         DiningDataService.getDinings(school._id)
         .then(response => {
             setDining_halls(response.data.dining_halls);
-            console.log(response.data.dining_halls);
+            //console.log(response.data.dining_halls);
         })
         .catch(e => {
             console.log(e);

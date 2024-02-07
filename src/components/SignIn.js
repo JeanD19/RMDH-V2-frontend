@@ -48,11 +48,11 @@ const SignIn = () => {
         const getAllSchools = () => {
             SchoolDataService.getAll()
             .then(response => {
-                console.log(response.data);
+                //console.log(response.data);
                 const schools = response.data.schools;
                 const universityNames = schools.map(school => school.name);
                 setUniversities(universityNames);
-                console.log(universities);
+                //console.log(universities);
             })
             .catch(e => {
                 console.log(e);
@@ -95,8 +95,8 @@ const SignIn = () => {
 
     const handleSubmitLogIn = (e) => {
         e.preventDefault();
-        console.log('Email: ' + emailLogIn);
-        console.log('Password: ' + passwordLogIn);
+        //console.log('Email: ' + emailLogIn);
+        //console.log('Password: ' + passwordLogIn);
 
         const data = {  
             email: emailLogIn,

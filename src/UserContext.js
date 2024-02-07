@@ -10,12 +10,12 @@ export const UserProvider = ({ children }) => {
     useEffect(() => {
         const fetchSession = async () => {
             try {
-                console.log("Rechecking session...")
+                //console.log("Rechecking session...")
                 const response = await UserDataService.checkLoggedIn();
-                console.log(response);
+                //console.log(response);
                 if (response.data.user) {
                     setUser(response.data.user);
-                    console.log(user);
+                    //console.log(user);
                 }
                 //const response = await UserDataService.testSession(10001, "test_user");
                 //console.log(response);

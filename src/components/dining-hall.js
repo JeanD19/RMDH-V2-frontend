@@ -180,10 +180,10 @@ const DiningHall = props => {
                                         const date = review.date; //needs to be formatted to mm/dd/yyy
                                         const grades = review.ratings;
                                         const comments = review.text_review;
-                                        console.log(grades);
+                                        //console.log(grades);
                                         
                                         const sum = Object.values(grades).reduce((a, b) => a + b, 0);
-                                        console.log(sum)
+                                        //console.log(sum)
                                         // const sum = gradesValues.reduce((a, b) => a + b, 0);
                                         // console.log(`The sum ${sum}`)
                                         const length = Object.keys(grades).length;
@@ -199,7 +199,7 @@ const DiningHall = props => {
                                         } else {
                                             color_review_rating = 'bg-success';
                                         }
-                                        console.log(average);
+                                        //console.log(average);
 
                                         const options = {
                                             month: 'long',
@@ -211,7 +211,7 @@ const DiningHall = props => {
                                         const mongoDate = new Date(date)
 
                                         const formattedDate = new Intl.DateTimeFormat('en-US', options).format(mongoDate);
-                                        console.log(formattedDate)
+                                        //console.log(formattedDate)
 
                                         return (
                                             <div className="card mt-3" key={id}>

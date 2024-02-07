@@ -10,11 +10,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js"
 const Profile = () => {
     const { user } = useContext(UserContext); // Get the user from the context
     const navigate = useNavigate();
-    console.log(user);
+    //console.log(user);
 
     useEffect(() => {
         if (!user) {
-            console.log("User is not logged in")
+            //console.log("User is not logged in")
             navigate("/");
         }
     }, [user]);
