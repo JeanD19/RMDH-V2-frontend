@@ -6,7 +6,7 @@ import Navbar from "../Navbar";
 import lookup from "../imgs/lookup.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import founder from "../imgs/founder_ceo";
+import founder from "../imgs/founder_ceo.png";
 
 const AboutUs = () => {
     return(
