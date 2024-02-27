@@ -17,8 +17,8 @@ const AboutUs = () => {
                 <p>We are the first platform enabling university students to review their dining hall experience. We take a holistic approach by focusing on all aspects of a dining hall including price, food quality, location, service, taste, etc. We aim for current and prospective students to use our platform to view and review the performance of dining halls' performance freely.</p>
 
                 <h2>Our team</h2>
-                <div className="row mt-3">
-                    <div className="col-5">
+                <div className="row mt-3 mb-3">
+                    <div className="col-sm-5">
                         <div className="card">
                             <img className="card-image-top" src={founder}/>
                             <div className="card-body">
