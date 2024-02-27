@@ -10,6 +10,7 @@ import SchoolSearch from "./components/school-search";
 import School from "./components/school";
 import DiningHall from "./components/dining-hall";
 import AddReview from "./components/add-review";
+import AboutUs from "./components/about-us";
 import './App.css';
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         <Route exact path="/school/:id" element={<School/>}/>
         <Route exact path="/dining-hall/:id" element={<DiningHall/>}/>
         <Route exact path="/dining-hall/:id/review" element={<AddReview/>}/>
+        <Route exact path="/about-us" element={<AboutUs/>}/>
       </Routes>
     </UserProvider>
     

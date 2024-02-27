@@ -120,12 +120,6 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link to="/about-us" className="nav-link text-decorations-none text-dark">About Us</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link to="/social-media" className="nav-link text-decorations-none text-dark">Social Media</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/give-feedback" className="nav-link text-decorations-none text-dark">Feedback</Link>
-                            </li>
                             {
                                 user ? (
                                     <li className="nav-item">
