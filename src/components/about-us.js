@@ -7,6 +7,8 @@ import lookup from "../imgs/lookup.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import founder from "../imgs/founder_ceo.png";
+import linkedin from "../imgs/linkedin.png";
+
 
 const AboutUs = () => {
     return(
@@ -23,7 +25,7 @@ const AboutUs = () => {
                             <img className="card-image-top" src={founder}/>
                             <div className="card-body">
                                 <h5 className="card-title">Jean-Daniel</h5>
-                                <p className="card-text">Founder & CEO</p>
+                                <p className="card-text">Founder & CEO <a href="https://www.linkedin.com/in/jean-daniel-liwanga/"><img src={linkedin} alt="LinkedIn link"/></a></p>
                             </div>
                         </div>
                     </div>
